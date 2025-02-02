@@ -173,8 +173,7 @@ ol {
   margin-right: auto;
 }
 
-.hero-btn,
-.btn-modal {
+.hero-btn {
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
@@ -191,10 +190,8 @@ ol {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-btn,
-.btn-modal:hover,
-.hero-btn,
-.btn-modal:focus {
+.hero-btn:hover,
+.hero-btn:focus {
   background-color: #404bbf;
 }
 
@@ -506,6 +503,10 @@ ol {
 }
 
 .footer-input {
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #fff;
   outline: none;
   border: 1px solid #fff;
   border-radius: 4px;
@@ -521,14 +522,13 @@ ol {
 }
 
 .footer-input::placeholder {
-  font-size: 12px;
-  line-height: 2;
-  letter-spacing: 0.04em;
   color: #fff;
 }
 
 .btn-sub {
   display: inline-flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
@@ -740,7 +740,7 @@ ol {
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.check-inpuy:checked+.check-text.check-item {
+.check-input:checked+.check-text .check-item {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
@@ -754,4 +754,26 @@ ol {
   text-decoration: underline;
   text-decoration-skip-ink: none;
   color: #4d5ae5;
+}
+
+.btn-modal {
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  background-color: #4d5ae5;
+  border-radius: 4px;
+  border: none;
+  min-width: 169px;
+  display: block;
+  padding: 16px 32px;
+  margin: 0 auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-modal:hover,
+.btn-modal:focus {
+  background-color: #404bbf;
 }
